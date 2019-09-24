@@ -31,7 +31,8 @@ print ("Connected to db")
 
 # query = "select distinct RESPONSIBLE_PARTY from ADRS_MAXORDER_2_9_2019"
 
-# query = """select distinct TL.AENDTP, TL.ZENDTP, MO.name, EN.GROUP_ID, GR.GROUP_STATUS, GR.GROUP_TYPE, ERR.GROUP_ERROR_TYPE, ERR.ERROR_REASON from
+# query = """select distinct TL.AENDTP, TL.ZENDTP, MO.name, EN.GROUP_ID, GR.GROUP_STATUS, GR.GROUP_TYPE,
+# ERR.GROUP_ERROR_TYPE, ERR.ERROR_REASON from
 # (select distinct moid, AENDTP, ZENDTP from TopologicalLink where AENDTP in
 # (select PTPNAME from TEMP_4LAC_PART123_PORTS) union
 # select distinct moid, ZENDTP, AENDTP from TopologicalLink where ZENDTP in
