@@ -2,7 +2,8 @@ import mysql.connector
 import timeit
 import csv
 
-mydb = mysql.connector.connect(host="localhost",user="kirankumar",password="kirankumar",database="m6db")
+database = raw_input("Please enter your database name: ")
+mydb = mysql.connector.connect(host="localhost",user="kirankumar",password="kirankumar",database=database)
 print ("Connected to database")
 mycursor = mydb.cursor()
 # mycursor.execute("SELECT * FROM cygnettom6label")
