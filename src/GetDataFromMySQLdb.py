@@ -3,7 +3,7 @@ import timeit
 import csv
 
 database = raw_input("Please enter your database name: ")
-mydb = mysql.connector.connect(host="localhost",user="kirankumar",password="kirankumar",database=database)
+mydb = mysql.connector.connect(host="localhost", user="kirankumar", password="kirankumar", database=database)
 print ("Connected to database")
 mycursor = mydb.cursor()
 # mycursor.execute("SELECT * FROM cygnettom6label")
