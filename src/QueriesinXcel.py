@@ -56,4 +56,5 @@ data = [(date, query, desc)]
 for row in data:
     sheet.append(row)
 
+print ("Appended the output and saved in {}".format(filePath))
 workbook.save(filePath)
