@@ -2,9 +2,9 @@
 # import sys
 # import fileinput
 
-textToSearch = raw_input ("Text to search for: ")
-textToReplace = raw_input("Text to replace: ")
-fileToReplace = raw_input("Enter the file path with file name: ")
+textToSearch = input("Text to search for: ")
+textToReplace = input("Text to replace: ")
+fileToReplace = input("Enter the file path with file name: ")
 
 # Reading the file
 with open(fileToReplace, 'r') as workFile:
@@ -17,7 +17,7 @@ fileData = fileData.replace(textToSearch, textToReplace)
 with open(fileToReplace, 'w') as workFile:
     workFile.write(fileData)
 
-print ("Completed the Process")
+print("Replacing {} with {} is completed in {}".format(textToSearch, textToReplace, fileToReplace))
 
 # for line in fileinput.input(fileToReplace):
 #     if textToSearch in line :
