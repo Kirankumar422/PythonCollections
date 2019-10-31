@@ -47,14 +47,14 @@ from datetime import date
 filePath = '/home/kirankumar/Shared/Common Files/Queries_Used.xlsx'
 workbook = openpyxl.load_workbook(filePath)
 sheet = workbook.active
-print ("Working sheet is: {}".format(sheet.title))
+print("Working sheet is: {}".format(sheet.title))
 date = date.today()
-query = raw_input("Please enter the Query: ")
-desc = raw_input("Please enter the description of that query: ")
+query = input("Please enter the Query: ")
+desc = input("Please enter the description of that query: ")
 data = [(date, query, desc)]
 
 for row in data:
     sheet.append(row)
 
-print ("Appended the output and saved in {}".format(filePath))
+print("Appended the output and saved in {}".format(filePath))
 workbook.save(filePath)
